@@ -34,6 +34,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.lemonade.ui.theme.LemonadeTheme
 
 class MainActivity : ComponentActivity() {
@@ -61,7 +62,14 @@ fun LemonApp() {
             .height(100.dp) // Adjust the height as needed
             .background(Color.Yellow)
     ) {
-
+        Text(text = "Lemonade",
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+            fontSize = 32.sp,
+            color = Color.Black,
+            textAlign = TextAlign.Center
+        )
     }
 
     Box(
